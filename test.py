@@ -1,4 +1,5 @@
-li =['h','a','p','p','y']
-li.reverse()
-for i in range(len(li)):
-    print(li[i],end='')
+# # s = ''
+# # for i in s:
+# #     s[i] = input()
+# # print(s)
+# for i in range()
