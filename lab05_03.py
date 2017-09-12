@@ -30,7 +30,7 @@ elif x == 'C' or x == 'c':
     elif e == 'C' or e == 'c':
         print("Your Chef's Chicken is 180 Baht.")
     else:
-        print('Pasta sub menu choice.')
+        print('Invalid sub menu choice.')
 elif x == 'P' or x == 'p':
     print('---<< Pasta Sub Menu >>---')
     print('    <S>paghetti de Italiano')
@@ -42,8 +42,8 @@ elif x == 'P' or x == 'p':
     elif p == 'L' or p == 'l':
         print('Your Lasagna Supreme is 120 Baht.')
     elif p == 'M' or p == 'm':
-        print('Your Macaroni Special is 100 Baht>')
+        print('Your Macaroni Special is 100 Baht.>')
     else:
-        print('Pasta sub menu choice.')
+        print('Invalid sub menu choice.')
 else:
     print("Invalid main menu choice.")
