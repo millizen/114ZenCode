@@ -6,9 +6,10 @@ else:
     i = 0
     count = x
     while count >= 1:
-        a += chr(ord('A') + i)
+        a += str(ord('A') + i)
         i += 1
         count -= 1
     print(count)
     print(i)
     print(a)
+    while :
