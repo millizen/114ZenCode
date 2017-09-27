@@ -1,12 +1,12 @@
-number = int(input("Enter a number: "))
-x = 1
-i = 0
-a = ''
-if number <= 0 or number > 26:
-    print("Invalid input, program terminates.")
+x = int(input())
+div = 10
+if x<= 10:
+	print("ERROR")
 else:
-    while x <= number:
-        a = a + chr(ord('A') + i)
-        print(a)
-        i += 1
-        x += 1
+	while True:
+		dx = x%div
+		ans = dx//(div/10)
+		print("%d" %ans)
+		div = div*10
+		if dx == x:
+			break
