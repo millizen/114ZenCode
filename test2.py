@@ -1,19 +1,25 @@
-x = int(input("Enter a number: "))
+number = int(input('Enter a number: '))
+num = number
+b = ''
+a = ''
 count = 0
-# a = 65
-a = 1
-i = 0
-while True:
-    while True:
-        c = x - count
-        print(ร)
-
-        # p = a + i
-        # print(p,end='')
-        i += 1
-        if i == c:
-            break
-    #print(count)
-    count = count + 1
-    if count == x:
-        break
+x = 0
+if number <= 0 or number > 26:
+    print('Invalid input, program terminates.')
+else:
+    while x < (number - 1):
+        a = a + chr(ord('A') + count)
+        print(a)
+        count = count + 1
+        x = x+1
+        if x == (number - 1):
+            while num >= 1:
+                count2 = 0
+                while count2 < num:
+                    b = chr(ord('A') + count2 )
+                    print(b, end='')
+                    count2 = count2 + 1
+                print()
+                num = num - 1
+        else:
+            pass
