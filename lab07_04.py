@@ -3,7 +3,6 @@ if num < 0:
     print('Invalid input, program terminates.')
 else:
     count = 0
-
     while True:
         if count == 0:
             print("0! = 1 = 1")
@@ -16,7 +15,6 @@ else:
             s = ''
             summ = 1
             while True:
-
                 s = s + str(c)
                 if c == 1:
                     s = s + ' = '

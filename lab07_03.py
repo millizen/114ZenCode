@@ -10,12 +10,19 @@ else:
         print(a)
         count += 1
     while True:
-        count1 = 2
-        while count1 <= s:
-            a = chr(ord('A') + (count1-2))
+        count1 = 1
+        while count1 <= s-1:
+            a = chr(ord('A') + (count1-1))
             print(a, end='')
             count1 += 1
         print()
         s -= 1
         if s == 0:
             break
+
+# a
+# ab
+# abc
+# abcd
+# abcde
+# abcd
