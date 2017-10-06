@@ -1,13 +1,17 @@
-x = int(input())
-c = x**2
-a = 1
-b = 1
-count = 0
-while a < x:
-    a += 1
-    b = 1
-    while b < x:
-        b += 1
-        if a**2 + b**2 == c:
-            count += 1
-print(count//2)
+num = int(input())
+div = 10
+while True:
+    if num % div == num:
+        d = div
+    if num % div == num:
+        break
+    div *= 10
+
+while True:
+    a = num % d
+    if d == 1:
+        break
+    ans = a // (d/10)
+    d /= 10
+    # print("a =",a)
+    print('%d'%ans)
