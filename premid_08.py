@@ -1,5 +1,6 @@
 s = input()
-num = int(input())
-if s != "Sunday" or s != "Monday" or s != "Tuesday" or s != "Wednesday" or s != "Thursday" or s != "Friday" or s != "Saturday" or num <= 0 or num > 31 :
+day = int(input())
+if s != "Sunday" and s != "Monday" and s != "Tuesday" and s != "Wednesday" and s != "Thursday" and s != "Friday" and s != "Saturday" or day <= 0 or day > 31 :
     print("ERROR")
-if 
+else:
+    print("9999")
