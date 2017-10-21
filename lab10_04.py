@@ -5,8 +5,9 @@ while True:
     y = input()
     if y == "0":
         break
-    for i in x:
-        if i == y:
-            count += 1
+    else:
+        for i in x:
+
+
 
 print("%d/%d"%(count, l))
