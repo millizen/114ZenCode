@@ -1,13 +1,14 @@
 x = input()
 l = len(x)
 count = 0
+li = []
 while True:
-    y = input()
-    if y == "0":
+    n = input()
+    if n == '0':
         break
-    else:
+    if n not in li:
         for i in x:
-
-
-
-print("%d/%d"%(count, l))
+            if i == n:
+                count += 1
+    li.append(n)
+print("%d/%d"%(count,l))
