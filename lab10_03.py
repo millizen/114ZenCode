@@ -1,5 +1,6 @@
 x = input()
-a = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+ls = "aeiouAEIOU"
+count = 0
 for i in x:
-    if i not in a:
-        print(i,end='')
+    if i not in ls:
+        print(i,end ='')

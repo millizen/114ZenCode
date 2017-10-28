@@ -1,5 +1,5 @@
 x = input()
-a = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+a = 'aeiouAEIOU'
 count = 0
 for i in a:
     for j in x:

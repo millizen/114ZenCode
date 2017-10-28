@@ -1,7 +1,7 @@
 x = input()
 l = len(x)
 count = 0
-li = []
+li = ''
 while True:
     n = input()
     if n == '0':
@@ -10,5 +10,5 @@ while True:
         for i in x:
             if i == n:
                 count += 1
-    li.append(n)
+    li = li + n
 print("%d/%d"%(count,l))
