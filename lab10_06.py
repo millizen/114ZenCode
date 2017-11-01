@@ -5,13 +5,10 @@ index = 0
 while True:
     if index >= lenn:
         break
-
     if x[index] not in l:
         print(x[index],end='')
         index += 1
-
     elif x[index] in l:
-        # if index == (lenn - 1):
         if index == (lenn -1):
             print(x[index],end='')
             break
