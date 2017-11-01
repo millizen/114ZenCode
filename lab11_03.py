@@ -4,24 +4,17 @@ while True:
     x = input()
     if x == '-1':
         break
-    c = 0
-    count = 0
-    # loop for count max string
-    while c < len(x):
-        if x[c] != '=' and x[c] != ' ':
-            count += 1
-        else:
-            break
-        c += 1
+
+    # for check max string
     l = x.split('=',1)
-    # print(l[0].strip())
-    # print(l[1].strip())
+    r = len(l[0].strip())
+    if r > maxx:
+        maxx = r
 
     # add to ls list for print
     ls.append(l[0].strip())
     ls.append(l[1].strip())
-    if count > maxx:
-        maxx = count
+
 # print(maxx)
 # print(ls)
 
@@ -32,5 +25,12 @@ while cc < len(ls):
         print(ls[cc].rjust(maxx),end='')
         print(' = ',end='')
     if cc%2 != 0:
-        print(' %s'%ls[cc])
+        print('%s'%ls[cc])
     cc += 1
+
+
+
+# test case
+# erwerer =eeee
+#    ww =  r
+# wer     eqwer=rr
