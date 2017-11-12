@@ -1,9 +1,10 @@
 def accum_sum(l):
+    ll = []
     summ = 0
     for i in l:
         summ += i
-        print(summ)
-    return summ
+        ll.append(summ)
+    return ll
 
 li = []
 while True:
@@ -17,4 +18,6 @@ while True:
 print('Original list:')
 print(li)
 print('Accumulative Sum:')
-accum_sum(li)
+ll = accum_sum(li)
+for i in ll:
+    print(i)
