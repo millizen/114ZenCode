@@ -1,17 +1,4 @@
-number = int(input())
-ans = 1
-
-if number > 4000000000:
-    pass
-
-else:
-    while number > 0:
-        a = number % 10
-        if a % 2 == 0:
-            ans = ans * a
-        number = number // 10
-
-    if ans == 0:
-        print(-1)
-    else:
-        print(ans)
+s = [2,3,4,5,4,3,2]
+print(s[:4])
+for i in range(0,4):
+    print(i)
