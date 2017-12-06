@@ -15,5 +15,5 @@ while True:
     a1 = summ
     print(summ * -1)
     i += 1
-    if i == 10:
+    if i == x:
         break
