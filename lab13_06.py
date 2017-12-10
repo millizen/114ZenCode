@@ -27,7 +27,6 @@ def check_order(l):
             a = "The list is in random order."
     return a
 
-
 l = []
 while True:
     num = int(input("Enter a number (-1 to end): "))
