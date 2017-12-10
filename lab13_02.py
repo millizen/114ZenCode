@@ -1,26 +1,41 @@
 num = int(input())
+lscp = []
 ans = []
-if num >= 1 or num <= 100:
+y = ["A","1","2","3","4","5","6","7","8","9","10","J","Q","K"]
+if num >= 1 and num <= 100:
     for i in range(num):
+        d = ''
+        ls = []
+        lscp = []
+        lsm = []
         x = input()
-        x = x.upper()
-        x = x.replace('A','1')
-        x = x.replace('J','10')
-        x = x.replace('Q','10')
-        x = x.replace('K','10')
-        l = x.split()
-        if len(l) == 5:
-            summ = 0
-            for i in l:
-                i = int(i)
-                summ += i
-                if summ >= 16:
-                    if summ > 21:
-                        a = "busted"
-                        ans.append(a)
-                    else:
-                        a = summ
-                        ans.append(a)
-                    break
+        ls = x.split()
+        # print(ls)
+        for i in ls:
+            lscp.append(i)
+        for i in ls:
+            if i not in y:
+                lscp.remove(i)
+        for i in lscp:
+            d += i + ' '
+        d = d.replace('A','1')
+        d = d.replace('J','10')
+        d = d.replace('K','10')
+        d = d.replace('Q','10')
+        # print(d)
+        lsm = d.split()
+        # print(lsm)
+
+        summ = 0
+        for i in lsm:
+            i = int(i)
+            summ += i
+            if summ >= 16:
+                break
+        ans.append(summ)
+
 for i in ans:
-    print(i)
+    if  i > 21:
+        print('busted')
+    else:
+        print(i)
