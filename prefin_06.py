@@ -16,6 +16,7 @@
 #     for i in range(num):
 #         s = s + st[i]
 # print(s)
+#=====================code คนอื่น======================
 s = input()
 n = int(input())
 y = abs(n)

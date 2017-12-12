@@ -21,4 +21,5 @@ summ = []
 while ls != []:
     summ = aa(ls,summ)
     ls.remove(ls[0])
+print(summ)
 print(max(summ))
