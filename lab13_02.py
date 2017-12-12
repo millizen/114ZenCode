@@ -62,6 +62,9 @@ for x in ls:
                 b += z
     chck2.append(b)
     chck.append(chck2)
+print(b)
+print(chck)
+
 ans = []
 for z in chck:
     e = 0
